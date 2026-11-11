@@ -1,0 +1,275 @@
+* {
+  text-align: center;
+  background-color: #DFB6D6;
+  color: #683675;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  background-color: transparent;
+}
+
+nav ul {
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding: 20px;
+  width: 100%;
+}
+
+nav li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #BD97C6;
+  border: 2px solid #683675;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav li svg {
+  background-color: transparent;
+}
+
+#nameDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nameDiv div{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul {
+  margin: 20px auto;
+}
+
+#socialMedias {
+  display: flex;
+  width: 25%;
+  margin: 0 auto;
+}
+
+#socialMedias div {
+  margin: 0 auto;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hobbiesList {
+  width: fit-content;           
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  gap: 10px 40px;
+}
+
+#hobbiesList li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+#linksImages {
+  width: fit-content;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px 40px;
+  list-style: none;
+}
+
+#linksImages li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+#linksImages li figure {
+  display: inline;
+  margin: 0;
+}
+
+#meterPercentage {
+  display: inline;
+}
+
+ul li {
+  text-align: left;
+}
+
+video, audio {
+  margin: 10px;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  text-shadow: 0px 0px 15px #ac69bf;
+}
+
+#itSpan {
+  text-decoration: underline;
+}
+
+#nameSpan {
+  font-style: italic;
+}
+
+a:hover {
+  color: #836c7e;
+}
+
+h2 {
+  box-shadow: 0px 0px 25px 6px #a07595;
+  font-family: monospace;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  width: 10%;
+  margin: 30px auto;
+  background-color: #BD97C6;
+  border: 2px solid #87657E;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+iframe {
+  margin: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+hr {
+  background-color: purple;
+  width: 75%;
+  height: 2px;
+  border: none;
+}
+
+#itSkillsSections {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  width: 30%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#itSkillsSections article {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #BD97C6;
+  border: 2px solid #683675;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#itSkillsSections article * {
+  background-color: transparent;
+  padding: 5px;
+}
+
+.carouselContainer {
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carouselSlides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: shiftImages 12s infinite;
+  -webkit-animation: shiftImages 12s infinite;
+}
+
+.carouselSlides figure {
+  width: 33.3333%;
+  height: 100%;
+  margin: 0;
+}
+
+.carouselSlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+figcaption {
+  border-radius: 10px;
+  background-color: #82558e;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.carouselSlides:hover {
+  animation-play-state: paused;
+}
+
+#poemsSection {
+  display: flex;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+#poemsSection article {
+  margin: 10px auto;
+  padding: 10px;
+}
+
+@keyframes shiftImages {
+
+    0%, 20% {
+        transform: translateX(0);
+    }
+
+    25%, 45% {
+      transform: translateX(-33.3333%);
+    }
+
+    50%, 70% {
+        transform: translateX(-66.6667%);
+        
+    }
+
+    75%, 100% {
+      transform: translateX(0%);
+    }
+}
